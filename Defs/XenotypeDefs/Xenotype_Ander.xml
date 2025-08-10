@@ -10,7 +10,7 @@
         <displayPriority>100</displayPriority>
         <inheritable>true</inheritable>
         <genes>
-            <li>Ears_Pointed</li>
+            <li>Ears_Ander</li>
             <li>Beauty_Pretty</li>
             <li>Hair_LongOnly</li>
             <li>Beard_NoBeardOnly</li>

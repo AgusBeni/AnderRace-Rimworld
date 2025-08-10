@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <GeneDef>
+        <defName>Ears_Ander</defName>
+        <label>ander ears</label>
+        <description>Distinctive elongated ears characteristic of the Ander race.</description>
+        <iconPath>UI/Gene_AnderEars</iconPath>
+        <displayOrderInCategory>500</displayOrderInCategory>
+        <biostatCpx>1</biostatCpx>
+        <biostatMet>0</biostatMet>
+        <symbolPack>
+            <prefixSymbols>
+                <li>
+                    <symbol>long</symbol>
+                </li>
+                <li>
+                    <symbol>keen</symbol>
+                </li>
+            </prefixSymbols>
+        </symbolPack>
+        <renderNodeProperties>
+            <li>
+                <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+                <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+                <texPath>Ears/Ander</texPath>
+                <parentTagDef>Head</parentTagDef>
+                <useSkinShader>true</useSkinShader>
+                <useRottenColor>true</useRottenColor>
+                <rotDrawMode>Fresh, Rotting</rotDrawMode>
+                <drawData>
+                    <defaultData>
+                        <layer>70</layer>
+                    </defaultData>
+                </drawData>
+            </li>
+        </renderNodeProperties>
+        <exclusionTags>
+            <li>Ears</li>
+        </exclusionTags>
+    </GeneDef>
+</Defs>
