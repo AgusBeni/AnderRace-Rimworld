@@ -28,7 +28,7 @@
             <li>Corunan</li>
         </allowedCultures>
         <requiredMemes>
-            <li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Loyalist</li>
         </requiredMemes>
         <allowedMemes>
 
