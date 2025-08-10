@@ -4,43 +4,34 @@
     <FactionDef ParentName="FactionBase">
         <defName>AnderKingdom</defName>
         <label>ander kingdom</label>
-        <description>A paramilitary organisation sanctioned and governed by political figures and
-            megacorporations.
-            Mercenaries don't sow, they don't build, and they rarely trade. Driven by a
-            blood-and-honor culture that values personal strength and ruthlessness, they enrich
-            themselves by raiding and robbing their more productive neighbors.
-            Mercenaries utilise spacer-tech weapons and armors to eliminate the targets of their
-            corporate overlords. Unlike other pirate factions, mercenaries can be communicated with
-            and befriended, but they rarely have much to offer in regards to trade and research.</description>
-        <pawnSingular>mercenary</pawnSingular>
-        <pawnsPlural>mercenaries</pawnsPlural>
-        <listOrderPriority>12</listOrderPriority>
+        <description>A medieval society of elf-like Anders ruled by queens.</description>
+        <pawnSingular>ander</pawnSingular>
+        <pawnsPlural>anders</pawnsPlural>
+        <listOrderPriority>40</listOrderPriority>
         <settlementGenerationWeight>1</settlementGenerationWeight>
         <requiredCountAtGameStart>1</requiredCountAtGameStart>
-        <maxCountAtGameStart>1</maxCountAtGameStart>
+        <maxCountAtGameStart>3</maxCountAtGameStart>
         <canMakeRandomly>true</canMakeRandomly>
         <canSiege>false</canSiege>
         <canStageAttacks>true</canStageAttacks>
         <leaderTitle>Priest</leaderTitle>
-        <factionIconPath>World/WorldObjects/Expanding/Town</factionIconPath>
-        <factionNameMaker>NamerFactionPirate</factionNameMaker>
-        <settlementNameMaker>NamerSettlementPirate</settlementNameMaker>
+        <factionIconPath>UI/Faction_Ander</factionIconPath>
+        <factionNameMaker>NamerFactionTribal</factionNameMaker>
+        <settlementNameMaker>NamerSettlementTribal</settlementNameMaker>
         <colorSpectrum>
             <li>(0.51, 0.58, 0.26)</li>
             <li>(0.89, 1.0, 0.45)</li>
         </colorSpectrum>
         <permanentEnemy>false</permanentEnemy>
-        <techLevel>Spacer</techLevel>
+        <techLevel>Medieval</techLevel>
         <allowedCultures>
-            <li>Kriminul</li>
+            <li>Corunan</li>
         </allowedCultures>
         <requiredMemes>
             <li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
-            <li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
-            <li MayRequire="Ludeon.RimWorld.Ideology">Transhumanist</li>
         </requiredMemes>
         <allowedMemes>
-            <li MayRequire="Ludeon.RimWorld.Ideology">PainIsVirtue</li>
+
         </allowedMemes>
         <structureMemeWeights>
             <Structure_Ideological MayRequire="Ludeon.RimWorld.Ideology">1</Structure_Ideological>
@@ -48,64 +39,39 @@
         <backstoryFilters>
             <li>
                 <categories>
-                    <li>Pirate</li>
+                    <li>Tribe</li>
                 </categories>
             </li>
         </backstoryFilters>
         <xenotypeSet>
             <xenotypeChances>
-                <Hussar MayRequire="Ludeon.RimWorld.Biotech">0.6</Hussar>
-                <Genie MayRequire="Ludeon.RimWorld.Biotech">0.1</Genie>
+                <Ander MayRequire="Ludeon.RimWorld.Biotech">1</Ander>
             </xenotypeChances>
         </xenotypeSet>
         <allowedArrivalTemperatureRange>-40~45</allowedArrivalTemperatureRange>
         <maxPawnCostPerTotalPointsCurve>
             <points>
-                <li>(0,35)</li>
-                <li>(70, 50)</li>
-                <li>(700, 100)</li>
-                <li>(1300, 150)</li>
-                <li>(100000, 10000)</li>
+                <li>(0, 1)</li>
+                <li>(3000, 1)</li>
+                <li>(4500, 0.5)</li>
+                <li>(7000, 0.1)</li>
             </points>
         </maxPawnCostPerTotalPointsCurve>
         <pawnGroupMakers>
             <li>
-                <!-- Normal fights, weak mix -->
                 <kindDef>Combat</kindDef>
-                <commonality>30</commonality>
+                <commonality>100</commonality>
                 <options>
                     <AnderWarrior>10</AnderWarrior>
-                </options>
-            </li>
-            <li>
-                <!-- Normal fights -->
-                <kindDef>Combat</kindDef>
-                <commonality>60</commonality>
-                <options>
-                    <AnderWarrior>10</AnderWarrior>
-                </options>
-            </li>
-            <li>
-                <!-- Normal fights, strong mix -->
-                <kindDef>Combat</kindDef>
-                <commonality>10</commonality>
-                <options>
-                    <AnderWarrior>10</AnderWarrior>
-
+                    <AnderArcher>10</AnderArcher>
                 </options>
             </li>
             <li>
                 <kindDef>Peaceful</kindDef>
+                <commonality>100</commonality>
                 <options>
                     <AnderVillager>10</AnderVillager>
-                </options>
-            </li>
-            <li>
-                <!-- Base defense -->
-                <kindDef>Settlement</kindDef>
-                <options>
-                    <AnderVillager>10</AnderVillager>
-
+                    <AnderTrader>3</AnderTrader>
                 </options>
             </li>
         </pawnGroupMakers>
