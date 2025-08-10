@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <XenotypeDef>
+        <defName>Ander</defName>
+        <label>ander</label>
+        <description>An elf-like people known for their pointed ears, natural attractiveness, and
+            long hair. Anders are naturally aggressive and beardless, with a tendency toward pale
+            skin and various hair colors ranging from blonde to brown. They embody grace and martial
+            prowess in equal measure.</description>
+        <descriptionShort>Elf-like warriors with pointed ears and natural beauty.</descriptionShort>
+        <iconPath>UI/Icons/Xenotypes/Custom</iconPath>
+        <displayPriority>100</displayPriority>
+        <inheritable>true</inheritable>
+        <nameMaker>NamerPersonAnder</nameMaker>
+        <genes>
+            <li>Ears_Pointed</li>
+            <li>Beauty_Pretty</li>
+            <li>Hair_LongOnly</li>
+            <li>Beard_NoBeard</li>
+            <li>Body_Standard</li>
+            <li>Aggression_Aggressive</li>
+            <li>Skin_InkBlack</li>
+            <li>Skin_Pale</li>
+            <li>Hair_Blonde</li>
+            <li>Hair_Sandy</li>
+            <li>Hair_Red</li>
+            <li>Hair_Brown</li>
+        </genes>
+        <soundDefOnImplant>XenotypeImplanted</soundDefOnImplant>
+    </XenotypeDef>
+</Defs>
