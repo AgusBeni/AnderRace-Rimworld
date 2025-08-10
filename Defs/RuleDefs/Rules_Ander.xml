@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <!-- Town Names -->
+    <RulePackDef>
+        <defName>AN_NamerTown</defName>
+        <rulePack>
+            <rulesStrings>
+                <li>r_name->[AnderTownName]</li>
+            </rulesStrings>
+            <rulesFiles>
+                <li>AnderTownName->Names/Ander_Towns</li>
+            </rulesFiles>
+        </rulePack>
+    </RulePackDef>
+
+    <!-- Male Names -->
+    <RulePackDef>
+        <defName>AN_NamerMale</defName>
+        <rulePack>
+            <rulesStrings>
+                <li>r_name(p=2)->[AnderFirstMale] [AnderLastName]</li>
+            </rulesStrings>
+            <rulesFiles>
+                <li>AnderFirstMale->Names/Ander_First_Male</li>
+                <li>AnderLastName->Names/Ander_Last</li>
+            </rulesFiles>
+        </rulePack>
+    </RulePackDef>
+
+    <!-- Female Names -->
+    <RulePackDef>
+        <defName>AN_NamerFemale</defName>
+        <rulePack>
+            <rulesStrings>
+                <li>r_name(p=2)->[AnderFirstFemale] [AnderLastName]</li>
+            </rulesStrings>
+            <rulesFiles>
+                <li>AnderFirstFemale->Names/Ander_First_Female</li>
+                <li>AnderLastName->Names/Ander_Last</li>
+            </rulesFiles>
+        </rulePack>
+    </RulePackDef>
+
+</Defs>

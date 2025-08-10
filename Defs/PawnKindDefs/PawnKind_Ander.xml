@@ -9,13 +9,16 @@
             <li>Wimp</li>
             <li>Nudist</li>
         </disallowedTraits>
-        <backstoryFilters>
+        <backstoryFiltersOverride>
             <li>
-                <categories>
+                <categoriesChildhood>
                     <li>Tribal</li>
-                </categories>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>TribalHunter</li>
+                </categoriesAdulthood>
             </li>
-        </backstoryFilters>
+        </backstoryFiltersOverride>
         <xenotypeSet>
             <xenotypeChances>
                 <Ander>1.0</Ander>

@@ -17,7 +17,7 @@
         <leaderTitle>Priest</leaderTitle>
         <factionIconPath>UI/Faction_Ander</factionIconPath>
         <factionNameMaker>NamerFactionTribal</factionNameMaker>
-        <settlementNameMaker>NamerSettlementTribal</settlementNameMaker>
+        <settlementNameMaker>AN_NamerTown</settlementNameMaker>
         <colorSpectrum>
             <li>(0.51, 0.58, 0.26)</li>
             <li>(0.89, 1.0, 0.45)</li>
@@ -73,6 +73,16 @@
                     <AnderVillager>10</AnderVillager>
                     <AnderTrader>3</AnderTrader>
                 </options>
+            </li>
+            <li>
+                <kindDef>Trader</kindDef>
+                <traders>
+                    <AnderTrader>1</AnderTrader>
+                </traders>
+                <guards>
+                    <AnderWarrior>25</AnderWarrior>
+                    <AnderArcher>25</AnderArcher>
+                </guards>
             </li>
         </pawnGroupMakers>
         <settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>

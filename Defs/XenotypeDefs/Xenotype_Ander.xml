@@ -21,5 +21,7 @@
             <li>Hair_ReddishBrown</li>
             <li>Hair_SandyBlonde</li>
         </genes>
+        <nameMaker>AN_NamerMale</nameMaker>
+        <nameMakerFemale>AN_NamerFemale</nameMakerFemale>
     </XenotypeDef>
 </Defs>
