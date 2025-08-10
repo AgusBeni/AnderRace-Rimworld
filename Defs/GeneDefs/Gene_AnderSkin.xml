@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <GeneDef ParentName="GeneSkinColorOverride">
+        <defName>Skin_White</defName>
+        <label>white skin</label>
+        <description>Carriers of this gene have white skin, this pigment product natural white color</description>
+        <skinColorOverride>(250,220,193)</skinColorOverride>
+        <randomBrightnessFactor>0.10</randomBrightnessFactor>
+        <displayOrderInCategory>0</displayOrderInCategory>
+        <symbolPack>
+            <prefixSymbols>
+                <li>
+                    <symbol>white</symbol>
+                </li>
+                <li>
+                    <symbol>pale</symbol>
+                </li>
+            </prefixSymbols>
+            <suffixSymbols></suffixSymbols>
+        </symbolPack>
+    </GeneDef>
+</Defs>

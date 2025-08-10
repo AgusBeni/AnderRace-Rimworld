@@ -6,7 +6,7 @@
         <description>An elf-like race with pointed ears, natural beauty, and long hair. Anders are
             aggressive by nature and live in a medieval society led by strong women.</description>
         <descriptionShort>Elf-like warriors with pointed ears and natural beauty.</descriptionShort>
-        <iconPath>UI/Icons/Xenotypes/Baseliner</iconPath>
+        <iconPath>UI/Xenotype_Ander</iconPath>
         <displayPriority>100</displayPriority>
         <inheritable>true</inheritable>
         <genes>
@@ -15,6 +15,7 @@
             <li>Hair_LongOnly</li>
             <li>Beard_NoBeardOnly</li>
             <li>Body_Standard</li>
+            <li>Skin_White</li>
             <li>Aggression_Aggressive</li>
             <li>Hair_Blonde</li>
             <li>Hair_ReddishBrown</li>
