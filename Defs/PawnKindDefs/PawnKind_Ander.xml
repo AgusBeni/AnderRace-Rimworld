@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <!-- Base Ander -->
+    <PawnKindDef Name="AnderBase" Abstract="True">
+        <race>Human</race>
+        <defaultFactionType>AnderKingdom</defaultFactionType>
+        <disallowedTraits>
+            <li>Wimp</li>
+            <li>Nudist</li>
+        </disallowedTraits>
+        <backstoryFilters>
+            <li>
+                <categories>
+                    <li>Tribal</li>
+                </categories>
+            </li>
+        </backstoryFilters>
+
+        <xenotypeSet>
+            <xenotypeChances>
+                <Ander>1.0</Ander>
+            </xenotypeChances>
+        </xenotypeSet>
+    </PawnKindDef>
+
+    <!-- Villager -->
+    <PawnKindDef ParentName="AnderBase">
+        <defName>AnderVillager</defName>
+        <label>ander villager</label>
+        <combatPower>40</combatPower>
+        <gearHealthRange>0.2~0.8</gearHealthRange>
+        <apparelTags>
+            <li>IndustrialBasic</li>
+            <li>IndustrialAdvanced</li>
+        </apparelTags>
+        <apparelMoney>200~600</apparelMoney>
+        <weaponMoney>200~500</weaponMoney>
+        <weaponTags>
+            <li>NeolithicMeleeBasic</li>
+            <li>NeolithicRangedBasic</li>
+        </weaponTags>
+        <initialResistanceRange>10~20</initialResistanceRange>
+        <initialWillRange>3~5</initialWillRange>
+    </PawnKindDef>
+
+    <!-- Warrior -->
+    <PawnKindDef ParentName="AnderBase">
+        <defName>AnderWarrior</defName>
+        <label>ander warrior</label>
+        <combatPower>100</combatPower>
+        <gearHealthRange>0.7~1.0</gearHealthRange>
+        <apparelTags>
+            <li>IndustrialMilitary</li>
+            <li>IndustrialMilitaryBasic</li>
+        </apparelTags>
+        <apparelMoney>1000~2500</apparelMoney>
+        <weaponMoney>500~1200</weaponMoney>
+        <weaponTags>
+            <li>NeolithicMeleeAdvanced</li>
+        </weaponTags>
+        <skills>
+            <li>
+                <skill>Melee</skill>
+                <range>6~12</range>
+            </li>
+        </skills>
+        <initialResistanceRange>15~25</initialResistanceRange>
+        <initialWillRange>4~6</initialWillRange>
+    </PawnKindDef>
+
+    <!-- Archer -->
+    <PawnKindDef ParentName="AnderBase">
+        <defName>AnderArcher</defName>
+        <label>ander archer</label>
+        <combatPower>80</combatPower>
+        <gearHealthRange>0.6~1.0</gearHealthRange>
+        <apparelTags>
+            <li>IndustrialBasic</li>
+        </apparelTags>
+        <apparelMoney>600~1500</apparelMoney>
+        <weaponMoney>400~800</weaponMoney>
+        <weaponTags>
+            <li>NeolithicRangedHeavy</li>
+        </weaponTags>
+        <skills>
+            <li>
+                <skill>Shooting</skill>
+                <range>8~14</range>
+            </li>
+        </skills>
+        <initialResistanceRange>12~22</initialResistanceRange>
+        <initialWillRange>3~5</initialWillRange>
+    </PawnKindDef>
+
+    <!-- Chief -->
+    <PawnKindDef ParentName="AnderBase">
+        <defName>AnderChief</defName>
+        <label>ander chief</label>
+        <combatPower>150</combatPower>
+        <factionLeader>true</factionLeader>
+        <gearHealthRange>0.9~1.0</gearHealthRange>
+        <apparelTags>
+            <li>IndustrialMilitary</li>
+            <li>IndustrialMilitaryBasic</li>
+            <li>Royal</li>
+        </apparelTags>
+        <apparelMoney>2000~5000</apparelMoney>
+        <weaponMoney>1000~2000</weaponMoney>
+        <weaponTags>
+            <li>NeolithicMeleeAdvanced</li>
+            <li>NeolithicRangedHeavy</li>
+        </weaponTags>
+        <skills>
+            <li>
+                <skill>Melee</skill>
+                <range>8~15</range>
+            </li>
+            <li>
+                <skill>Shooting</skill>
+                <range>6~12</range>
+            </li>
+            <li>
+                <skill>Social</skill>
+                <range>8~15</range>
+            </li>
+        </skills>
+        <minGenerationAge>25</minGenerationAge>
+        <initialResistanceRange>20~30</initialResistanceRange>
+        <initialWillRange>5~8</initialWillRange>
+    </PawnKindDef>
+
+    <!-- Trader -->
+    <PawnKindDef ParentName="AnderBase">
+        <defName>AnderTrader</defName>
+        <label>ander trader</label>
+        <combatPower>50</combatPower>
+        <trader>true</trader>
+        <gearHealthRange>0.4~0.9</gearHealthRange>
+        <apparelTags>
+            <li>IndustrialBasic</li>
+            <li>IndustrialAdvanced</li>
+        </apparelTags>
+        <apparelMoney>800~2000</apparelMoney>
+        <weaponMoney>300~800</weaponMoney>
+        <weaponTags>
+            <li>NeolithicMeleeBasic</li>
+        </weaponTags>
+        <skills>
+            <li>
+                <skill>Social</skill>
+                <range>6~12</range>
+            </li>
+            <li>
+                <skill>Intellectual</skill>
+                <range>4~8</range>
+            </li>
+        </skills>
+        <initialResistanceRange>8~18</initialResistanceRange>
+        <initialWillRange>2~4</initialWillRange>
+    </PawnKindDef>
+
+</Defs>
